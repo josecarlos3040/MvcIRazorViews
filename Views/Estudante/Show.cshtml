@@ -1,0 +1,28 @@
+@model MvcRazorViews.ViewModels.EstudanteViewModel
+
+
+@{
+    ViewData["Title"] = "Detalhe do Estudantes";
+}
+
+<h1>@Model.Nome</h1>
+<hr>
+@if(Model.Ativo)
+{
+    <button>Iniciar Conversa</button>
+    <button>Editar</button>
+    <button>Destativar</button>
+}
+
+else{
+    <button>Ativar</button>
+}
+
+
+
+
+<hr>
+<p>Id: @Model.Id</p>
+<p>Nome: @Model.Id</p>
+<p>Endereco: @Model.Id</p>
+
